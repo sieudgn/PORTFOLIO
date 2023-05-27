@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sieu Nguyen Portfolio">
+    <meta name="keywords" content="Sieu Nguyen, Vietnam">
+    <meta name="author" content="Sieu Nguyen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta property="og:title" content="Sieu Nguyen" />
+    <meta property="og:description" content="Sieu's Portfolio" />
+
+    <title>Sieu Duy Gia Nguyen</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187990578-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-187990578-1');
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <!-- <link rel="stylesheet" href="css/lightbox.min.css"> -->
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+          padding: 20px;
+        }
+        
+        </style>
+</head>
+
+
+<body>
+    <!-- Main navigation -->
+    <header style="background-color: #fdfbf6">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container ">
+                <!-- <a class="text-center navbar-brand" href="#">Portfolio</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="project.html">Projects</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+
+        <!-- Full Page Intro -->
+
+        <div id="intro-section" class="view">
+
+            <div class="loader-wrapper">
+                <span class="loader"><span class="loader-inner"></span></span>
+            </div>
+
+            <div id="anim" style="height:100%; width:100%;">
+                <script src="lottie.js"></script>
+            </div>
+
+
+            <script>
+                // intro animation 
+                var animation = bodymovin.loadAnimation({
+                    container: document.getElementById('anim'),
+                    render: 'svg',
+                    // loop: false,
+                    mode: 'scroll',
+                    // autoplay: true,
+                    path: "logo_animation.json"
+                });
+
+            </script>
+
+            
+        </div>
+
+
+        <!-- Full Page Intro -->
+    </header>
+    <script>
+        // end page loader animation 
+        try {
+            $(window).load(function () {
+                $(".loader-wrapper").fadeOut("slow");
+            });
+        } catch (err) {
+            console.log(err.message);
+        }
+    </script>
+
+    <!--Main layout-->
+    <main>
+
+        <section id="web-dev" class="text-center " style="align-items: center;padding-top:5%;margin-bottom: 0%;">
+            <div class="wow fadeInRight subtext-header h3section " style="padding-top:3%;">
+                
+                <!--Projects-->
+                    <!--Poppop boat-->
+                    <div class="text-center">
+                        <div class="text-center" style="background-color: transparent; font-size:30px">
+                            <p style= "object-fit: cover; padding: 2rem;"> <b>Pop pop boat</b></p>
+                        </div>
+                        <div class="column" style="background-color:transparent;">
+                            <center>
+                              <video width="620" controls playsinline autoplay muted loop 
+                              style= "object-fit: cover; padding: 1rem;">
+                              <source src="Project/PoppopBoat.mp4" type="video/mp4">
+                              <source src="Project/PoppopBoat.mp4" type="video/ogg">
+                              </video>
+                            </center>
+                        </div>
+                    </div>
+                    <!--Poppop boat-->
+
+                    <!--Arduino Joystick-->
+                    <div class="text-center ">
+                        <div class="column hr-dark my-2 w-100" style="background-color:transparent; font-size:30px">
+                            <p style= "object-fit: cover; padding: 2rem;"> <b>Arduino Joystick</b></p>
+                        </div>
+                        <div class="column" style="background-color:transparent">
+                            <center>
+                                <video width="620" controls playsinline autoplay muted loop 
+                                style= "object-fit: cover; padding: 1rem;">
+                                <source src="Project/arduino_joystick.mp4" type="video/mp4">
+                                <source src="Project/arduino_joystick.mp4" type="video/ogg">
+                                </video>
+                            </center>
+                        </div>
+                    </div>
+                    <!--Arduino Joystick-->
+
+                    <!-- CNC Plotter -->
+                    <div class="text-center ">
+                        <div class="column hr-dark my-2 w-100" style="background-color:transparent; font-size:30px">
+                            <p style= "object-fit: cover; padding: 2rem;"> <b>CNC Plotter</b></p>
+                        </div>
+                        <div class="column" style="background-color:transparent">
+                            <center>
+                                <video width="620" controls playsinline autoplay muted loop 
+                                style= "object-fit: cover; padding: 1rem;">
+                                <source src="Project/CNCplotter.mp4" type="video/mp4">
+                                <source src="Project/CNCplotter.mp4" type="video/ogg">
+                                </video>
+                            </center>
+                        </div>
+                    </div>
+                    <!-- CNC Plotter -->
+
+                    <!-- Fan with Led -->
+                    <div class="text-center ">
+                        <div class="column hr-dark my-2 w-100" style="background-color:transparent; font-size:30px">
+                            <p style= "object-fit: cover; padding: 2rem;"> <b>Fan with Led</b></p>
+                        </div>
+                        <div class="column" style="background-color:transparent">
+                            <center>
+                                <video width="620" controls playsinline autoplay muted loop 
+                                style= "object-fit: cover; padding: 1rem;">
+                                <source src="Project/pov led.mp4" type="video/mp4">
+                                <source src="Project/pov led.mp4" type="video/ogg">
+                                </video>
+                            </center>
+                        </div>
+                    </div>
+                    <!-- Fan with Led -->
+
+                    <!-- TeleScope-->
+                    <div class="text-center ">
+                        <div class="column hr-dark my-2 w-100" style="background-color:transparent; font-size:30px">
+                            <p style= "object-fit: cover; padding: 2rem;"> <b>My Telescope</b></p>
+                        </div>
+                        <div class="column" style="background-color:transparent">
+                            <center>
+                                <img src="Project/TeleScp.png" alt="Result on repl" width="500">
+                            </center>
+                            <center>
+                                <video width="620" controls playsinline autoplay muted loop 
+                                style= "object-fit: cover; padding: 1rem;">
+                                <source src="Project/MoonThroughTelescope.mp4" type="video/mp4">
+                                <source src="Project/MoonThroughTelescope.mp4" type="video/ogg">
+                                </video>
+                            </center>
+                        </div>
+                    </div>
+                    <!-- TeleScope-->
+                    
+                    <!-- TeleScope-->
+                    <div class="text-center ">
+                        <div class="column hr-dark my-2 w-100" style="background-color:transparent; font-size:30px">
+                            <p style= "object-fit: cover; padding: 2rem;"> <b>My Microscope</b></p>
+                        </div>
+                        <div class="column" style="background-color:transparent">
+                            <center>
+                                <img src="Project/Microscope.jpg" alt="Result on repl" width="300">
+                            </center>
+                            <center>
+                                <video width="620" controls playsinline autoplay muted loop 
+                                style= "object-fit: cover; padding: 1rem;">
+                                <source src="Project/Microscope.mp4" type="video/mp4">
+                                <source src="Project/Microscope.mp4" type="video/ogg">
+                                </video>
+                            </center>
+                            <p style= "object-fit: cover; padding: 2rem; font-size:30px"> <b>Tomato skin</b></p>
+                            <center>
+                                <img src="Project/biểu bì cà chua.JPG" alt="Result on repl" width="300">
+                            </center>
+                            <p style= "object-fit: cover; padding: 2rem; font-size:30px;"> <b>Onion skin</b></p>
+                            <center>
+                                <img src="Project/biểu bì cà chua.JPG" alt="Result on repl" width="300">
+                            </center>
+                        </div>
+                    </div>
+                    <!-- TeleScope-->
+
+                <!--Projects-->
+
+
+                <!-- Social buttons -->
+                <ul class="list-unstyled list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="https://github.com/sieudgn" class="btn-floating btn-github mx-1" target="_blank">
+                            <i class="fab fa-github"> </i>
+                        </a>
+                    </li>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/giasieu.nguyen?mibextid=LQQJ4d" class="btn-floating btn-instagram mx-1"
+                            target="_blank">
+                            <i class="fab fa-facebook"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="sieugnguyen@gmail.com" class="btn-floating btn-instagram mx-1"
+                            target="_blank">
+                            <i class="fa">&#xf0e0; </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <!--Main layout-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2023 Copyright - Sieu Nguyen
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="./js/mdb.min.js"></script>
+
+
+
+    <!-- Custom scripts -->
+    <script src="./js/lazysizes.min.js" async></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript">
+
+
+        function displayGallery() {
+            var x = document.getElementById("container2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js"></script>
+
+    <script async>
+
+        $('#ripple').ripples({
+            resolution: 512,
+            dropRadius: 20,
+            perturbance: 0.02,
+        });
+
+        $(document).ready(function () {
+            new WOW().init();
+        });
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        // end page loader animation 
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+            if ($('.navbar').hasClass('navbar-light')) {
+                $('.navbar').addClass('top-nav-collapse-light');
+            }
+        });
+
+    </script>
+
+
+</body>
+
+</html>
