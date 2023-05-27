@@ -1,0 +1,454 @@
+/* Required for full background image */
+html,
+body,
+section,
+header,
+body {
+  background-color: #fdfdfd;
+}
+#intro-section {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #836853;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.001;
+}
+
+.bg {
+  background-color: #fdfdfd;
+}
+
+#web-dev {
+  background: linear-gradient(to bottom, #836853, #fdfdfa);
+}
+
+
+/* LOADING ANIMATION  */
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fdfdfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #444;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #444;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+h2 {
+  font-size: 40px;
+}
+
+#snell_roundhand {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  align-items: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: black;
+  color: #fdfdfd;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+@media (max-width: 515px) {
+  html,
+  body,
+  header {
+    height: 90vh;
+    background-color: #fdfdfd;
+  }
+  #intro-section {
+    width: 100%;
+    height: 70vh;
+    top: 0;
+    left: 0;
+    background-color: #006D5B;
+    justify-content: center;
+    align-items: center;
+  }
+  #web-dev {
+    background: linear-gradient(to bottom, #006D5B, #eeeec0);
+    margin-top: -40%;
+    padding-bottom: 10%;
+    color: white;
+  }
+  .loader-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #444;
+    animation: loader 2s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #444;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  #hero-content {
+    /* font-family: Snell Roundhand, cursive; */
+    text-align: center;
+    align-items: center;
+    /* height: 110%; */
+  }
+  #snell_roundhand {
+    /* font-family: Snell Roundhand, cursive; */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+    font-size: 45px;
+    align-items: center;
+    /* height: 20%; */
+    margin-top: 0px;
+    margin-bottom: 450px;
+  }
+  .subtext-header {
+    font-size: 16px;
+  }
+
+  #contact_now {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  #contact_now_header {
+    margin-bottom: 0px;
+  }
+  /* h2{
+    font-size: 0px;
+  } */
+  /* h4 {
+    height: 10%;
+  } */
+
+  /* .h3section {
+    margin-bottom: 50px;
+    height: 0%;
+  } */
+}
+
+.top-nav-collapse {
+  background-color: #1c1c1c !important;
+}
+.top-nav-collapse-light {
+  background-color: white !important;
+}
+.page-footer {
+  background-color: grey !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+  }
+
+  #ripple {
+    align-self: center;
+    left: 50%;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    top: 0%;
+    right: 100%;
+    bottom: 0%;
+    background: url(/artwork/back3-min.png) middle top / fill;
+  }
+}
+
+.rgba-gradient {
+  background: -moz-linear-gradient(
+    45deg,
+    rgb(254, 255, 255),
+    rgb(2, 3, 48) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(6, 134, 253, 0.6),
+    rgba(241, 241, 245, 0.69) 100%
+  );
+  background: linear-gradient(
+    to 45deg,
+    rgba(6, 134, 253, 0.6),
+    rgba(243, 243, 245, 0.69) 100%
+  );
+}
+
+#anim {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.card-img {
+  border-radius: 10px;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* DEVELPMENT TOOLS BUTTON STYLE  */
+.button-code {
+  padding: 5px 10px 5px 10px;
+  border-radius: 6px;
+  /* background-color: black; */
+  color: #f2f0f0;
+  /* rgb(252, 252, 252); */
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fa9c53;
+  /* rgb(224, 141, 63); */
+  opacity: 0.6;
+}
+
+.button-code:hover {
+  padding: 5px 10px 5px 10px;
+  border-radius: 6px;
+  /* background-color: black; */
+  color: #fa9c53;
+  /* rgb(224, 141, 63); */
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.slideInUp {
+  animation-delay: 1s;
+}
+
+.d-block {
+  border-radius: 10px;
+}
+.btn-white:hover {
+  scrollbar-shadow-color: #fa9c53;
+  box-shadow: #fa9c53;
+}
+
+/* IMAGE GRADIANT CURRENTLY NOT USING  */
+
+@-webkit-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+@-moz-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+@keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+.scroll-btn {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 2%;
+}
+.scroll-btn > * {
+  display: inline-block;
+  line-height: 18px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #7f8c8d;
+  color: #AFD5F0;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+  color: gray;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 55px;
+  margin: 0px 50% 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid gray;
+  border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+  position: absolute;
+  display: block;
+  top: 29%;
+  left: 50%;
+  right: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: gray;
+  border-radius: 50%;
+  -webkit-animation: ani-mouse 2.5s linear infinite;
+  -moz-animation: ani-mouse 2.5s linear infinite;
+  animation: ani-mouse 2.5s linear infinite;
+}
