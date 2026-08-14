@@ -47,6 +47,45 @@
                         <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
                     </div>
                     <div class="row gx-5 justify-content-center">
+                            <!-- Project Card -3-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <!-- <h2 class="fw-bolder">Mini garage door</h2> -->
+                                            <p></p>
+                                        </div>
+                                        <!--Security Garage-->
+                                        <div class="text-center">
+                                            <div class="text-center" style="background-color: transparent; font-size:30px">
+                                                <p style= "object-fit: cover; padding: 2rem;"> <b>Arduino Optical Data Transmission System</b></p>
+                                            </div>
+                                            <div> 
+                                                <p style="text-align:left; padding-right: 20px;">Designed and implemented a custom digital communication system using two Arduino boards. A potentiometer value is read through the ADC, mapped from 0–1023 to 0–180, encoded into binary, and transmitted bit-by-bit to a receiver Arduino, which reconstructs the value and uses it to control a servo motor.<br>
+
+The communication protocol includes a start bit, data bits, parity bit, and stop/idle state, with a 1 ms bit period. Parity is generated using the number of 1 bits modulo 2 to detect transmission errors.<br>
+
+The project initially used predefined binary arrays for testing before being upgraded to dynamically transmit integer values using bit shifting and masking.<br>
+
+The next stage of the project is to replace the direct electrical connection with an LED and photoresistor-based optical communication link. Because the photoresistor has a slower response time than a digital electrical signal, the receiver timing and signal detection will need to be redesigned to reliably decode the transmitted data.<br>
+
+Technologies: Arduino, C/C++, ADC, Digital Communication, Bitwise Operations, UART-inspired Protocol Design, Servo Control, Optical Communication.
+                                                </p>
+                                            </div>
+                                            <div class="column" style="background-color:transparent;">
+                                                <center>
+                                                    <video width="200" controls playsinline muted loop 
+                                                    style= "object-fit: cover; padding: 2rem;">
+                                                    <source src="Project/UART.mov" type="video/mp4">
+                                                    <source src="Project/UART.mov" type="video/ogg">
+                                                    </video>
+                                                    </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         <div class="col-lg-11 col-xl-9 col-xxl-8">
                             <!-- Project Card -2-->
                             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
